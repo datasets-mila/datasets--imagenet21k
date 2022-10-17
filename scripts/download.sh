@@ -7,7 +7,7 @@ set -o errexit -o pipefail
 # This script is meant to be used with the command 'datalad run'
 
 files_url=(
-	"https://image-net.org/data/winter21_whole.tar.gz winter21_whole.tar.gz")
+	"https://image-net.org/data/imagenet21k_resized.tar.gz imagenet21k_resized.tar.gz")
 
 # These urls require login cookies to download the file
 git-annex addurl --fast -c annex.largefiles=anything --raw --batch --with-files <<EOF
